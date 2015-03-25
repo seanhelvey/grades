@@ -1,9 +1,9 @@
 
 I have {{ records.length }} records.
-The average grade is {{ calculateAverage(records)}}.
-<form ng-submit="addRecord()">
-  Name: <input ng-model="studentName" type="text"/>
-  Grade: <input ng-model="grade" type="text"/>
+The average grade is {{ average }}, with a {{ minimum }} min and {{ maximum }} max.
+<form ng-submit="addRecord(studentName,grade)">
+  Name: <input id="studentName" ng-model="studentName" type="text"/>
+  Grade: <input id="grade" ng-model="grade" type="text"/>
   <input type="submit" id="submit" value="Submit" class="btn btn-default btn-sm"/>
 </form>
 
